@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-GasApiRails::Application.load_tasks
+GasApi::Application.load_tasks
