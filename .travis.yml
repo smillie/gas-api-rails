@@ -6,6 +6,6 @@ env:
   - DB=sqlite
 before_script:
   - "echo \"GasApi::Application.config.secret_key_base = '$(bundle exec rake secret)'\" > config/initializers/secret_token.rb"
-  - "echo \"Devise.secret_key = '$(bundle exec rake secret)'\" >> config/initializers/secret_token.rb"
+#  - "echo \"Devise.secret_key = '$(bundle exec rake secret)'\" >> config/initializers/secret_token.rb"
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
